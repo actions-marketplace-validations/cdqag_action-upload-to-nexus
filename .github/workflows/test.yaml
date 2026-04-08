@@ -27,7 +27,7 @@ jobs:
 
     - if: ${{ success() || failure() }}
       name: Add test results to checks
-      uses: dorny/test-reporter@v1
+      uses: dorny/test-reporter@v3
       with:
         name: "Tests Results"
         reporter: jest-junit
